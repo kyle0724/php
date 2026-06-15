@@ -4,7 +4,7 @@
     session_start();
     if (!$_SESSION["id"]) {
         echo "請登入帳號";
-        echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
+        echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";   // 3 秒後自動跳轉回登入頁面 (2.login.html)
     }
     else{   
         $conn=mysqli_connect("120.105.96.90", "immust", "immustimmust", "immust");
@@ -12,7 +12,7 @@
             echo "修改錯誤";
             echo "<meta http-equiv=REFRESH content='3, url=18.user.php'>";
         }else{
-            echo "修改成功，三秒鐘後回到網頁";
+            echo "修改成功，三秒鐘後回到網頁"; 
             echo "<meta http-equiv=REFRESH content='3, url=18.user.php'>";
         }
     }
