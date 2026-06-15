@@ -3,7 +3,7 @@
     <body>
 <?php        
     error_reporting(0);
-    session_start();
+    session_start();     // 啟動 Session 機制，這樣才能讀取或儲存跨網頁的使用者登入變數
     if (!$_SESSION["id"]) {
         echo "請登入帳號";
         echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
