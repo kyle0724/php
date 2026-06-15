@@ -6,7 +6,7 @@
         echo "<meta http-equiv=REFRESH content='3, url=2.login.html'>";
     }
     else{
-        echo "
+        echo "      // 如果已經登入，則用 echo 印出整段 HTML 網頁與表單
         <html>
             <head><title>新增佈告</title></head>
             <body>
